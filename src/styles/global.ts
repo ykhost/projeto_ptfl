@@ -29,8 +29,11 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background: var(--background);
+    height: 100vh;
+
+    background: radial-gradient(ellipse at top, #3e3f45, #191b20 65%);
     -webkit-font-smoothing: antialiased;
+    background-repeat: no-repeat;
   }
 
   body, input, textarea, button{
@@ -53,7 +56,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .react-modal-overlay{
-    background: rgba(0,0,0, 0.5);
+    /* background: rgba(0,0,0, 0.5); */
     position: fixed;
     top: 0;
     bottom: 0;
@@ -86,5 +89,11 @@ export const GlobalStyle = createGlobalStyle`
     &:hover{
       filter: brightness(0.8);
     }
+  }
+
+  .container {
+    max-width: 1420px;
+    margin-left: auto;
+    margin-right: auto;
   }
 `

@@ -1,12 +1,11 @@
 import styled from 'styled-components'
 
 export const Container = styled.header`
-  background: var(--black-800);
+  /* background: var(--black-800); */
 
 `
 
 export const Content = styled.div`
-  max-width: 1120px;
   margin: 0 auto;
   height: 5rem;
   
@@ -17,6 +16,7 @@ export const Content = styled.div`
   a.logo{
     font-weight: 800;
     font-size: 1.5rem;
+    padding: 0 3rem;
   }
 
   nav{
